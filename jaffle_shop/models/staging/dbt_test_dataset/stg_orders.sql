@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from `ofr-xx2-app-flg-1-dev`.dbt_test_dataset.orders
+from {{ source('dbt_test_dataset','orders') }}
